@@ -32,7 +32,7 @@ export default function ServicesPage() {
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize, setPageSize] = useState(25);
   const total = services?.length || 0;
   const pagedServices = services ? services.slice((currentPage - 1) * pageSize, currentPage * pageSize) : [];
 

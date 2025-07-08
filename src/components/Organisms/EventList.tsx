@@ -17,7 +17,7 @@ export default function EventList({ serviceId, serviceName }: EventListProps) {
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize, setPageSize] = useState(25);
   const total = events.length;
   const pagedEvents = events.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
