@@ -1,5 +1,7 @@
 # MonitoCorp – SRE Monitoring Dashboard
 
+Implementation : https://drive.google.com/file/d/1g3O2qKsHL92Px63udVJE4fXx-4ufTVAb/view?usp=sharing
+
 A real-time dashboard for Site-Reliability Engineers to observe the health of micro-services, inspect live logs/events and react quickly to incidents.
 
 The project is built with **Next.js 15 App-Router + TypeScript** and embraces modern, type-safe patterns throughout the stack.  
