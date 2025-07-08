@@ -15,13 +15,11 @@ import { Button, Spin } from 'antd';
 export default function ServicesPage() {
   const [filters, setFilters] = useState({ name: '', status: 'All' as 'All' | ServiceStatus, type: 'All' as 'All' | ServiceType });
   const [showAddModal, setShowAddModal] = useState(false);
-  // import { Service } from '@/mocks/data';
   const [editTarget, setEditTarget] = useState<Service | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<Service | null>(null);
 
   const { create, update, remove } = useServiceMutations();
 
-  // Convert 'All' to undefined for API queries
   const statusForQuery = filters.status === 'All' ? undefined : filters.status;
   const typeForQuery = filters.type === 'All' ? undefined : filters.type;
   const nameForQuery = filters.name.trim() === '' ? undefined : filters.name.trim();
