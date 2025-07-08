@@ -65,6 +65,17 @@ export default function AddEditServiceModal({
             <Option value="Queue">Queue</Option>
           </Select>
         </Form.Item>
+        <Form.Item
+          label="Status"
+          name="status"
+          rules={[{message: 'Please select a status' }]}
+        >
+          <Select>
+            <Option value="Online">Online</Option>
+            <Option value="Offline">Offline</Option>
+            <Option value="Degraded">Degraded</Option>
+          </Select>
+        </Form.Item>
       </Form>
     </Modal>
   );
