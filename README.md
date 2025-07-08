@@ -64,8 +64,8 @@ MainLayout
  │   │   ├─ ServiceTable (table + filters + actions)
  │   │   └─ CrashReportGraph (Recharts line graph)
  │   └─ ServiceDetailPage
- │       ├─ HealthCards   (latency, uptime...)
- │       └─ IncidentTimeline
+ │       ├─ StatusCards   (status, type...)
+ │       └─ Edit/Add/Delete Services
  └─ EventsSidebar      (live logs & mini-chart)
 ```
 Each atomic component is fully presentational; data arrives via props or hooks residing one layer above.
@@ -148,7 +148,7 @@ bun dev
 ```
 
 > The dashboard boots at [http://localhost:3000](http://localhost:3000).  
-> Default credentials (dev-only): **Admin / Admin123**
+> Default credentials (dev-only): **Admin / Admin@123**
 
 
 ### Environment Variables
